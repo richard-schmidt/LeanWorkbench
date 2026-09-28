@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon concept C, the join lattice: bottom < a, b < a join b. Paths in a 108 viewport; content inside the 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <path android:pathData="M54,78 L34,54" android:strokeColor="#FFFFFFFF" android:strokeWidth="4" android:strokeLineCap="round" android:trimPathEnd="1"/>
+    <path android:pathData="M54,78 L74,54" android:strokeColor="#FFFFFFFF" android:strokeWidth="4" android:strokeLineCap="round" android:trimPathEnd="1"/>
+    <path android:pathData="M34,54 L54,30" android:strokeColor="#FFFFFFFF" android:strokeWidth="4" android:strokeLineCap="round" android:trimPathEnd="1"/>
+    <path android:pathData="M74,54 L54,30" android:strokeColor="#FFFFFFFF" android:strokeWidth="4" android:strokeLineCap="round" android:trimPathEnd="1"/>
+    <path android:pathData="M47.5,78 a6.5,6.5 0 1,0 13.0,0 a6.5,6.5 0 1,0 -13.0,0 Z" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M27.5,54 a6.5,6.5 0 1,0 13.0,0 a6.5,6.5 0 1,0 -13.0,0 Z" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M67.5,54 a6.5,6.5 0 1,0 13.0,0 a6.5,6.5 0 1,0 -13.0,0 Z" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M47.5,30 a6.5,6.5 0 1,0 13.0,0 a6.5,6.5 0 1,0 -13.0,0 Z" android:fillColor="#FFFFFFFF"/>
+</vector>

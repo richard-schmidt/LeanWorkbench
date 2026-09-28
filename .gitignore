@@ -1,0 +1,6 @@
+out/
+out-test/
+deps/
+.gradle/
+build/
+debug.keystore

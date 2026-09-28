@@ -1,0 +1,47 @@
+{
+ "_source": "lean-mcp Session.check_data on exact?/simp?/rw? examples, Lean 4.35 + Mathlib (2026-09-22)",
+ "diagnostics": [
+  {
+   "line": 4,
+   "col": 2,
+   "end_line": 4,
+   "severity": "info",
+   "message": "Try this:\n  [apply] exact Finset.union_comm s t"
+  },
+  {
+   "line": 6,
+   "col": 2,
+   "end_line": 6,
+   "severity": "info",
+   "message": "Try this:\n  [apply] simp only [add_zero]"
+  },
+  {
+   "line": 7,
+   "col": 38,
+   "end_line": 8,
+   "severity": "error",
+   "message": "unsolved goals\ns : Finset ℕ\n⊢ s.val ⊆ (s ∪ s).val"
+  },
+  {
+   "line": 8,
+   "col": 2,
+   "end_line": 8,
+   "severity": "info",
+   "message": "Try this:\n  [apply] rw [Finset.subset_iff]\n  -- ∀ ⦃x : ℕ⦄, x ∈ s → x ∈ s ∪ s"
+  },
+  {
+   "line": 8,
+   "col": 2,
+   "end_line": 8,
+   "severity": "info",
+   "message": "found an applicable rewrite lemma, but the corresponding tactic failed:\n  (expose_names; rw [Finset.union_self])\n  -- s ⊆ s\n\nIt may be possible to correct this proof by adding type annotations, explicitly specifying implicit arguments, or eliminating unnecessary function abstractions."
+  },
+  {
+   "line": 8,
+   "col": 2,
+   "end_line": 8,
+   "severity": "info",
+   "message": "Try this:\n  [apply] rw [← Finset.mem_powerset]\n  -- s ∈ (s ∪ s).powerset"
+  }
+ ]
+}
