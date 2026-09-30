@@ -1,8 +1,22 @@
 # Lean Workbench
 
-A phone-first Compose app for doing Lean proofs in the Lake packages under `~/LeanProjects`.
-Android cannot run Termux's binaries, so the app talks to `bridge.py`
-(`~/LeanProjects/lean-mcp`) over `127.0.0.1`, which owns warm Lean servers.
+A phone-first Android app for writing Lean 4 proofs.
+
+Lean's editors assume a desktop. On a phone the useful unit is not the file but
+the step: what this tactic did, and what is left to prove. The app is built
+around that. A proof is a list of steps, each tactic a card, and the goal after
+the selected step is one tap away. Checks run against the real Lean and
+Mathlib, in Termux on the same phone, through the
+[LeanMCP](https://github.com/richard-schmidt/LeanMCP) bridge.
+
+<p>
+<img src="docs/screenshots/steps.png" width="300" alt="The Steps view: a tactic, the goal after it, and the composer with hypothesis chips">
+<img src="docs/screenshots/file.png" width="300" alt="A file's declarations, each with its statement and status">
+</p>
+
+The app works on the Lake packages under `~/LeanProjects`. Android cannot run
+Termux's binaries, so the app talks to `bridge.py` (`~/LeanProjects/lean-mcp`)
+over `127.0.0.1`, which owns warm Lean servers.
 
 ## Bridge
 
@@ -106,6 +120,11 @@ fixtures/                   payloads recorded from the real bridge
   app can reach localhost. The token is in SharedPreferences and `~/.config/lean-bridge/token`.
 - The pairing link filter has no BROWSABLE category; the app asks before accepting a pairing.
 - `RUN_COMMAND` runs only the fixed start script, never a command built from input.
+
+## About this repository
+
+Developed in a private repository and published here as snapshot commits, so
+the history is short by design.
 
 ## License
 
